@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Bricolage+Grotesque:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Green/Teal palette for Ebanijyo */
+    --background: 97 3% 98%;
+    --foreground: 160 25% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 25% 10%;
+
+    /* Deep teal-green primary */
+    --primary: 0.45 0.13 162;
+    --primary-foreground: 0.99 0 0;
+
+    --secondary: 0.94 0.04 165;
+    --secondary-foreground: 0.35 0.1 165;
+
+    --muted: 0.95 0.02 160;
+    --muted-foreground: 0.52 0.05 160;
+
+    /* Warm amber accent */
+    --accent: 0.78 0.16 75;
+    --accent-foreground: 0.2 0.06 60;
+
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.99 0 0;
+
+    --border: 0.9 0.03 160;
+    --input: 0.9 0.03 160;
+    --ring: 0.45 0.13 162;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  }
+}
